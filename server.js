@@ -12,6 +12,9 @@ app.use(bodyparser.json())
 app.use("/user",router)
 app.use("/booking",brouter)
 app.use("/hotel",hrouter)
+app.get('/',(req,res)=>{
+    res.send('hello world')
+})
 
 app.listen(8000,()=>{
     console.log("server is running on port 8000")
